@@ -1,0 +1,91 @@
+@import "partial/_variables.scss";
+@import "partial/_mixins.scss";
+
+footer{
+    font-family: $font-lato;
+    color:$light-color;
+    text-align: center;
+    background-color: $gunmatel-color;
+    padding: 0px;
+    .container{
+        @include container-content;
+        padding: 0 0px;
+        a{
+            color: $light_color;
+            
+        }
+       }
+    .footer-links{
+        @include display-with-content(block,center);
+        padding: 16px 16px 0;
+        list-style: none; 
+        margin: 0;
+          li{
+            margin: 10px 0;
+           }
+        }
+    .footer-healthpartner{
+             ul{
+                display: block;
+                list-style: none;
+                justify-content: center;
+                padding: 0;
+                line-height: 30px;
+                li:nth-child(1){
+                    display: block;
+                    color:$dark-grey-color ;
+                    margin: 0 10px;
+                }
+                li{
+                    display: inline;
+                    margin: 0 10px;
+                }
+               }
+               
+        }
+    .social-icon{
+            margin: 0 0 16px;
+            i{
+                margin: 0 5px;
+                color: $light-sky;
+            }
+        }
+    address{
+            font-family: $font-lato;
+            font-style: normal;
+            margin: 0 0 16px;
+        }
+    .copyright{
+                color: $dark-grey-color;
+                margin: 0 0 16px;
+                padding: 0 10px;
+                p{
+                    line-height: 25px;
+                    margin:0;
+                }
+        }
+    .notice{
+            margin: 0 0 16px;
+            a{
+                text-decoration: underline;
+            }
+        }   
+}
+@media only screen and (min-width:768px){
+    footer{
+        padding: 16px;
+        .footer-links{
+            @include display-with-content(flex,center);
+            padding: 0;
+              a{
+                   text-decoration: none;
+                   margin: 0 25px; 
+               }
+            }
+        .footer-healthpartner{
+                 ul{
+                    display: flex;
+                   }      
+            }
+    }
+}

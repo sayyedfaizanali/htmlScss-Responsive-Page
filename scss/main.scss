@@ -1,0 +1,354 @@
+@import "footer.scss";
+@import "header.scss";
+@import "footer.scss";
+@import "partial/_variables.scss";
+@import "partial/_mixins.scss";
+  html {
+     width: auto;
+     overflow-x: hidden;
+    } 
+  body{
+    margin: 0;
+    background-color: $grey-color;
+    font-size: 15px;
+    .fa{
+        padding: 5px;
+    }
+    a{
+        color: $light-sky;
+        text-decoration: none;
+    }
+}
+.banner{
+    height: 100vh;
+    .banner__background {
+        width: 100%;
+        height: 100%;
+        background-image: url("/img/banner.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+.services{
+    background-color: $light-color;
+   .container{
+       @include container-content;
+       padding: 50px 0 0;  
+       text-align: center;
+   }
+   .services-title{
+       margin: 0;
+       h2{
+           margin: 0;
+       }
+       hr{
+           width: 150px;
+           border: 3px solid $light-sky;
+           margin-top: 50px;
+       }   
+   }
+   .services-options{
+       display: block;
+       padding: 50px 0;
+       margin: 0px 25px;
+       .services_option{
+        display: flex;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
+       }
+      p{
+        margin: 12px 15px;
+        }
+   }
+}
+.turning-carousel{
+    margin: 0;
+    .container{
+        @include container-content;
+        justify-content:center;
+        display: block;
+        background-color: transparent;
+    }
+    .turning_description{
+        width: 100%;
+        margin: 20px 0;
+        .turning-content{
+            padding: 0 15px;
+        }
+    }
+    p{
+        font-size: 15px;
+        &:nth-child(1){
+            font-weight: bold;
+            font-size: 26px;
+            margin-bottom: 0;
+        }
+    }
+    .turning_image{
+        width: 100%;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+.portrait-images{
+    display: block;
+    div{
+        width: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+    }  
+}
+.bluecross{
+    background-color: $light-color;
+    padding: 50px 10px 10px;
+    text-align: center;
+    .container{
+        max-width: 1200px;
+        margin: auto;
+        .bluecross-shield{
+            margin:0;     
+        }
+        .bluecross-shield-content{
+            text-align: left;
+        }
+        h1{
+            max-width: 600px;
+            margin: auto;
+        }
+       .bluecross-north,.bluecross-globe{
+            h3{
+                text-align: left;
+            }
+        }    
+    }
+    .bluecross-buttons{
+        margin:50px;
+        .button-grp{
+            display: block;
+            justify-content: center;
+        }
+        .doctor-btn{
+            margin-right: 10px;
+            a{
+                padding: 15px 20px;
+                background-color: $light-sky;
+                color: $light-color;
+                display: block;
+            }
+        }
+        .pharmacy-btn{
+            a{
+                margin: 15px 5px;
+                font-weight: bold;
+                color: $light-sky;
+                display: block;
+            }
+        }
+    }
+    .bluenorth-component{
+        background-color: $light-grey;
+        display: block;
+        .bluenorth-part{
+            width: 100%;
+            border: 1px solid $grey-color;
+            a{
+                color: $black_color;
+            }
+        }
+        .bluenorth-image{
+            width: 100%;
+            @include box-image;
+        }
+    }
+    .bluenorth-content,.blueglobe-content{
+        padding: 30px 0;
+        h2{
+            font-size: 56px;
+            font-weight: normal;
+            margin: 10px 0;
+        }
+        h4,p{
+            margin: 5px 0 0;
+        }
+        hr{
+           width: 20px;
+           border: 3px solid $north-hr-color;
+         }
+   }
+   .blueglobe-component{
+    background-color: $light-sky;
+    color: $light-color;
+    display: block;
+    .blueglobe-part{
+        width: 100%;
+        border: 1px solid $grey-color;
+        a{
+            color: $light-color;
+        }
+    }
+    .blueglobe-image{
+        width: 100%;
+        @include box-image;
+    }
+}
+}
+.contact{
+    background-color: $grey-color;
+    .container{
+        @include container-content;
+    }
+    .sales-services{
+        display: block;
+        justify-content: center;
+        text-align: center;
+        margin: 0 10px;
+    }
+    .sales_services{
+        padding: 5px 0px;
+        a{
+            font-size: 18px;
+            font-weight: bold;
+            color: $gunmatel-color;
+        }
+        &:nth-child(1){
+            border-right: none;
+            border-bottom: 2px solid $black_color;
+        }
+    }
+}
+@media only screen and (min-width:768px){
+    .banner{
+        height: 70vh;
+    }
+    .services{
+        margin: 20px 0 0;
+       .services-options{
+        display: flex;
+        padding: 50px 0;
+        .services_option{
+            text-align: center;
+            width: 33.33%;
+            display: block;
+            
+        }
+    }
+    }
+    .turning-carousel{
+        margin: 50px 0;
+        .container{
+            display: flex;
+        }
+        .turning_description{
+            width: 50%;
+            margin: 0;
+        }
+        .turning_image{
+            width: 30%;
+            padding: 10px;
+        }
+    }
+    .portrait-images{
+        display: flex;
+    }
+    .bluecross{   
+        padding: 50px 10px 10px;
+        .container{
+            .bluecross-shield{
+                margin: 0;
+                padding: 20px;
+            }
+            .bluecross-shield-content{
+                text-align: center;
+            }
+        }
+        .bluecross-buttons{
+            margin:50px;
+            .button-grp{
+                display: flex;
+            }
+            .doctor-btn{
+                a{
+                    padding: 15px 65px;
+                }
+            }
+            .pharmacy-btn{
+                a{
+                    margin: 15px 65px;
+                }
+            }
+        }
+        .bluenorth-component{
+            display: flex;
+            .bluenorth-part{
+                width: 25%;
+                // padding: 25px 0px;
+            }
+            .bluenorth-image{
+                width: 25%;
+            }
+        }
+        .blueglobe-component{
+            display: flex;
+            .blueglobe-part{
+                width: 33.33%;
+                // padding: 15px 0;
+            }
+            .blueglobe-image{
+                width: 33.33%;
+            }
+        }
+        
+    }
+   .contact{
+    .sales-services{
+        display: flex;
+        padding: 15px;
+        justify-content: center;
+    }
+    .sales_services{
+        padding: 0px 50px;
+        &:nth-child(1){
+            border-right: 2px solid $gunmatel-color;
+            border-bottom:none;
+            
+        }
+    }
+   }
+}
+@media only screen and (max-width:950px){
+    .turning-carousel{
+        p{
+            font-size: 15px;
+            &:nth-child(1){
+                font-weight: bold;
+                font-size: 26px;
+                margin: 5px 0 0;
+            }
+        }
+    }
+    @media only screen and (min-width:480px) and(max-width:768px){
+        .bluecross{   
+            .bluenorth-component{
+                display: block;
+                display: grid;
+                 grid-template-columns: repeat(2, 1fr);
+                 -ms-grid-rows: auto;
+                 grid-template-rows: auto;
+                .bluenorth-part{
+                    width: 100%;
+                }
+                .bluenorth-image{
+                    width: 100%;
+                }
+            }
+    }
+}
+}

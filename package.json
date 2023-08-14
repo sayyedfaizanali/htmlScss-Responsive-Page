@@ -1,0 +1,14 @@
+{
+  "name": "fourthreviewscss",
+  "version": "1.0.0",
+  "description": "yes update",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass scss/main.scss css/main.css"
+  },
+  "author": "faizan",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

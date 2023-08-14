@@ -1,0 +1,544 @@
+footer {
+  font-family: "Lato", sans-serif;
+  color: #FFFFFF;
+  text-align: center;
+  background-color: #333;
+  padding: 0px; }
+  footer .container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 0px; }
+    footer .container a {
+      color: #FFFFFF; }
+  footer .footer-links {
+    display: block;
+    justify-content: center;
+    padding: 16px 16px 0;
+    list-style: none;
+    margin: 0; }
+    footer .footer-links li {
+      margin: 10px 0; }
+  footer .footer-healthpartner ul {
+    display: block;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+    line-height: 30px; }
+    footer .footer-healthpartner ul li:nth-child(1) {
+      display: block;
+      color: #808080;
+      margin: 0 10px; }
+    footer .footer-healthpartner ul li {
+      display: inline;
+      margin: 0 10px; }
+  footer .social-icon {
+    margin: 0 0 16px; }
+    footer .social-icon i {
+      margin: 0 5px;
+      color: #007fb9; }
+  footer address {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    margin: 0 0 16px; }
+  footer .copyright {
+    color: #808080;
+    margin: 0 0 16px;
+    padding: 0 10px; }
+    footer .copyright p {
+      line-height: 25px;
+      margin: 0; }
+  footer .notice {
+    margin: 0 0 16px; }
+    footer .notice a {
+      text-decoration: underline; }
+
+@media only screen and (min-width: 768px) {
+  footer {
+    padding: 16px; }
+    footer .footer-links {
+      display: flex;
+      justify-content: center;
+      padding: 0; }
+      footer .footer-links a {
+        text-decoration: none;
+        margin: 0 25px; }
+    footer .footer-healthpartner ul {
+      display: flex; } }
+
+.header .container {
+  background-color: #FFFFFF;
+  font-size: 15px; }
+
+.header .navigation {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #015172; }
+  .header .navigation a {
+    color: #FFFFFF; }
+
+.header .navigation_left ul {
+  margin: 0;
+  padding: 5px 7px;
+  display: none;
+  list-style: none; }
+  .header .navigation_left ul li {
+    padding: 5px;
+    display: none; }
+    .header .navigation_left ul li:nth-child(1) {
+      display: block; }
+
+.header .navigation_left .fa {
+  padding: 0;
+  display: none; }
+
+.header .navigation_right {
+  display: flex;
+  flex-direction: column; }
+  .header .navigation_right ul {
+    justify-content: right;
+    margin: 0;
+    padding: 5px 7px;
+    display: flex;
+    list-style: none; }
+    .header .navigation_right ul li {
+      padding: 5px; }
+      .header .navigation_right ul li:nth-child(1) {
+        display: block;
+        width: calc(100% - 200px); }
+    .header .navigation_right ul .fa {
+      padding: 0 5px;
+      color: #FFFFFF; }
+
+.header .search-login {
+  display: flex;
+  text-align: center; }
+  .header .search-login .header-search {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #f4f5f9;
+    width: 60%;
+    display: flex; }
+    .header .search-login .header-search input {
+      background-color: transparent;
+      outline: none;
+      border: none;
+      border-left: 2px solid #007fb9;
+      color: #007fb9;
+      width: 80%;
+      margin: 5px 13px; }
+    .header .search-login .header-search .fa {
+      padding: 5px;
+      margin-top: 5px;
+      color: #007fb9; }
+    .header .search-login .header-search a {
+      width: 20%; }
+  .header .search-login .header-login {
+    background-color: #007fb9;
+    width: 40%; }
+    .header .search-login .header-login p {
+      margin: 0px 20px;
+      padding: 5px; }
+    .header .search-login .header-login .fa {
+      color: #FFFFFF;
+      padding: 5px;
+      margin-top: 5px; }
+
+.header .header-hamburger {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .header .header-hamburger img {
+    width: 150px;
+    padding: 10px; }
+  .header .header-hamburger .fa {
+    color: #808080;
+    margin: 15px 30px;
+    display: block; }
+
+.header .facility {
+  padding: 12px 0;
+  display: none; }
+
+.header hr {
+  display: none; }
+
+.header .facility-nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+  margin: 0; }
+
+.header .facility-nav a {
+  text-decoration: none;
+  color: #007fb9;
+  font-weight: bold;
+  margin: 0 25px; }
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .header .container, .header input {
+    font-size: 10px; } }
+
+@media only screen and (min-width: 768px) {
+  .header .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%; }
+  .header .navigation_left ul {
+    display: flex;
+    padding: 5px; }
+    .header .navigation_left ul li {
+      padding: 5px;
+      display: block; }
+  .header .navigation_left .fa {
+    padding: 0;
+    display: none; }
+  .header .navigation_right {
+    display: flex;
+    flex-direction: row; }
+    .header .navigation_right ul {
+      padding: 5px 25px 5px 5px; }
+      .header .navigation_right ul li {
+        padding: 5px; }
+        .header .navigation_right ul li:nth-child(1) {
+          display: none; }
+  .header .search-login input {
+    margin: 10px; }
+  .header .search-login .header-login {
+    background-color: #007fb9; }
+    .header .search-login .header-login p {
+      padding: 0 5px; }
+  .header .header-hamburger .fa {
+    display: none; }
+  .header .facility, .header hr {
+    display: block; } }
+
+footer {
+  font-family: "Lato", sans-serif;
+  color: #FFFFFF;
+  text-align: center;
+  background-color: #333;
+  padding: 0px; }
+  footer .container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 0px; }
+    footer .container a {
+      color: #FFFFFF; }
+  footer .footer-links {
+    display: block;
+    justify-content: center;
+    padding: 16px 16px 0;
+    list-style: none;
+    margin: 0; }
+    footer .footer-links li {
+      margin: 10px 0; }
+  footer .footer-healthpartner ul {
+    display: block;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+    line-height: 30px; }
+    footer .footer-healthpartner ul li:nth-child(1) {
+      display: block;
+      color: #808080;
+      margin: 0 10px; }
+    footer .footer-healthpartner ul li {
+      display: inline;
+      margin: 0 10px; }
+  footer .social-icon {
+    margin: 0 0 16px; }
+    footer .social-icon i {
+      margin: 0 5px;
+      color: #007fb9; }
+  footer address {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    margin: 0 0 16px; }
+  footer .copyright {
+    color: #808080;
+    margin: 0 0 16px;
+    padding: 0 10px; }
+    footer .copyright p {
+      line-height: 25px;
+      margin: 0; }
+  footer .notice {
+    margin: 0 0 16px; }
+    footer .notice a {
+      text-decoration: underline; }
+
+@media only screen and (min-width: 768px) {
+  footer {
+    padding: 16px; }
+    footer .footer-links {
+      display: flex;
+      justify-content: center;
+      padding: 0; }
+      footer .footer-links a {
+        text-decoration: none;
+        margin: 0 25px; }
+    footer .footer-healthpartner ul {
+      display: flex; } }
+
+html {
+  width: auto;
+  overflow-x: hidden; }
+
+body {
+  margin: 0;
+  background-color: #e6e6e6;
+  font-size: 15px; }
+  body .fa {
+    padding: 5px; }
+  body a {
+    color: #007fb9;
+    text-decoration: none; }
+
+.banner {
+  height: 100vh; }
+  .banner .banner__background {
+    width: 100%;
+    height: 100%;
+    background-image: url("/img/banner.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+
+.services {
+  background-color: #FFFFFF; }
+  .services .container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 0 0;
+    text-align: center; }
+  .services .services-title {
+    margin: 0; }
+    .services .services-title h2 {
+      margin: 0; }
+    .services .services-title hr {
+      width: 150px;
+      border: 3px solid #007fb9;
+      margin-top: 50px; }
+  .services .services-options {
+    display: block;
+    padding: 50px 0;
+    margin: 0px 25px; }
+    .services .services-options .services_option {
+      display: flex;
+      text-align: center;
+      width: 100%;
+      margin-bottom: 10px; }
+    .services .services-options p {
+      margin: 12px 15px; }
+
+.turning-carousel {
+  margin: 0; }
+  .turning-carousel .container {
+    max-width: 1000px;
+    margin: auto;
+    justify-content: center;
+    display: block;
+    background-color: transparent; }
+  .turning-carousel .turning_description {
+    width: 100%;
+    margin: 20px 0; }
+    .turning-carousel .turning_description .turning-content {
+      padding: 0 15px; }
+  .turning-carousel p {
+    font-size: 15px; }
+    .turning-carousel p:nth-child(1) {
+      font-weight: bold;
+      font-size: 26px;
+      margin-bottom: 0; }
+  .turning-carousel .turning_image {
+    width: 100%; }
+    .turning-carousel .turning_image img {
+      width: 100%;
+      height: auto; }
+
+.portrait-images {
+  display: block; }
+  .portrait-images div {
+    width: 100%; }
+    .portrait-images div img {
+      width: 100%;
+      height: 100%;
+      display: block; }
+
+.bluecross {
+  background-color: #FFFFFF;
+  padding: 50px 10px 10px;
+  text-align: center; }
+  .bluecross .container {
+    max-width: 1200px;
+    margin: auto; }
+    .bluecross .container .bluecross-shield {
+      margin: 0; }
+    .bluecross .container .bluecross-shield-content {
+      text-align: left; }
+    .bluecross .container h1 {
+      max-width: 600px;
+      margin: auto; }
+    .bluecross .container .bluecross-north h3, .bluecross .container .bluecross-globe h3 {
+      text-align: left; }
+  .bluecross .bluecross-buttons {
+    margin: 50px; }
+    .bluecross .bluecross-buttons .button-grp {
+      display: block;
+      justify-content: center; }
+    .bluecross .bluecross-buttons .doctor-btn {
+      margin-right: 10px; }
+      .bluecross .bluecross-buttons .doctor-btn a {
+        padding: 15px 20px;
+        background-color: #007fb9;
+        color: #FFFFFF;
+        display: block; }
+    .bluecross .bluecross-buttons .pharmacy-btn a {
+      margin: 15px 5px;
+      font-weight: bold;
+      color: #007fb9;
+      display: block; }
+  .bluecross .bluenorth-component {
+    background-color: #f4f5f9;
+    display: block; }
+    .bluecross .bluenorth-component .bluenorth-part {
+      width: 100%;
+      border: 1px solid #e6e6e6; }
+      .bluecross .bluenorth-component .bluenorth-part a {
+        color: #000000; }
+    .bluecross .bluenorth-component .bluenorth-image {
+      width: 100%; }
+      .bluecross .bluenorth-component .bluenorth-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block; }
+  .bluecross .bluenorth-content, .bluecross .blueglobe-content {
+    padding: 30px 0; }
+    .bluecross .bluenorth-content h2, .bluecross .blueglobe-content h2 {
+      font-size: 56px;
+      font-weight: normal;
+      margin: 10px 0; }
+    .bluecross .bluenorth-content h4, .bluecross .bluenorth-content p, .bluecross .blueglobe-content h4, .bluecross .blueglobe-content p {
+      margin: 5px 0 0; }
+    .bluecross .bluenorth-content hr, .bluecross .blueglobe-content hr {
+      width: 20px;
+      border: 3px solid #9bd5ee; }
+  .bluecross .blueglobe-component {
+    background-color: #007fb9;
+    color: #FFFFFF;
+    display: block; }
+    .bluecross .blueglobe-component .blueglobe-part {
+      width: 100%;
+      border: 1px solid #e6e6e6; }
+      .bluecross .blueglobe-component .blueglobe-part a {
+        color: #FFFFFF; }
+    .bluecross .blueglobe-component .blueglobe-image {
+      width: 100%; }
+      .bluecross .blueglobe-component .blueglobe-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block; }
+
+.contact {
+  background-color: #e6e6e6; }
+  .contact .container {
+    max-width: 1000px;
+    margin: auto; }
+  .contact .sales-services {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin: 0 10px; }
+  .contact .sales_services {
+    padding: 5px 0px; }
+    .contact .sales_services a {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333; }
+    .contact .sales_services:nth-child(1) {
+      border-right: none;
+      border-bottom: 2px solid #000000; }
+
+@media only screen and (min-width: 768px) {
+  .banner {
+    height: 70vh; }
+  .services {
+    margin: 20px 0 0; }
+    .services .services-options {
+      display: flex;
+      padding: 50px 0; }
+      .services .services-options .services_option {
+        text-align: center;
+        width: 33.33%;
+        display: block; }
+  .turning-carousel {
+    margin: 50px 0; }
+    .turning-carousel .container {
+      display: flex; }
+    .turning-carousel .turning_description {
+      width: 50%;
+      margin: 0; }
+    .turning-carousel .turning_image {
+      width: 30%;
+      padding: 10px; }
+  .portrait-images {
+    display: flex; }
+  .bluecross {
+    padding: 50px 10px 10px; }
+    .bluecross .container .bluecross-shield {
+      margin: 0;
+      padding: 20px; }
+    .bluecross .container .bluecross-shield-content {
+      text-align: center; }
+    .bluecross .bluecross-buttons {
+      margin: 50px; }
+      .bluecross .bluecross-buttons .button-grp {
+        display: flex; }
+      .bluecross .bluecross-buttons .doctor-btn a {
+        padding: 15px 65px; }
+      .bluecross .bluecross-buttons .pharmacy-btn a {
+        margin: 15px 65px; }
+    .bluecross .bluenorth-component {
+      display: flex; }
+      .bluecross .bluenorth-component .bluenorth-part {
+        width: 25%; }
+      .bluecross .bluenorth-component .bluenorth-image {
+        width: 25%; }
+    .bluecross .blueglobe-component {
+      display: flex; }
+      .bluecross .blueglobe-component .blueglobe-part {
+        width: 33.33%; }
+      .bluecross .blueglobe-component .blueglobe-image {
+        width: 33.33%; }
+  .contact .sales-services {
+    display: flex;
+    padding: 15px;
+    justify-content: center; }
+  .contact .sales_services {
+    padding: 0px 50px; }
+    .contact .sales_services:nth-child(1) {
+      border-right: 2px solid #333;
+      border-bottom: none; } }
+
+@media only screen and (max-width: 950px) {
+  .turning-carousel p {
+    font-size: 15px; }
+    .turning-carousel p:nth-child(1) {
+      font-weight: bold;
+      font-size: 26px;
+      margin: 5px 0 0; } }
+
+@media only screen and (max-width: 950px) and (min-width: 480px) and (max-width: 768px) {
+  .bluecross .bluenorth-component {
+    display: block;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: auto;
+    grid-template-rows: auto; }
+    .bluecross .bluenorth-component .bluenorth-part {
+      width: 100%; }
+    .bluecross .bluenorth-component .bluenorth-image {
+      width: 100%; } }

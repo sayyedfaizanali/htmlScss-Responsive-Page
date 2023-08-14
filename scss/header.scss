@@ -1,0 +1,201 @@
+@import "partial/_variables.scss";
+@import "partial/_mixins.scss";
+
+.header{
+    .container{
+        background-color: $light-color;
+        font-size: 15px;
+    }
+    .navigation{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: $headerbg-color;
+       a{
+         color: $light-color;
+        }
+    }
+    .navigation_left{
+        ul{
+            margin: 0;
+            padding: 5px 7px;
+            display: none;
+            list-style: none;
+            li{
+                padding: 5px; 
+                display: none;
+                &:nth-child(1){
+                    display:block;
+                }
+            }
+        }
+        .fa{
+            padding: 0;
+            display: none;
+        }
+    }
+    .navigation_right{
+        display: flex;
+        flex-direction: column;
+        ul{
+          justify-content: right;
+          margin: 0;
+          padding: 5px 7px;
+          display: flex;
+          list-style: none;
+          li{
+            padding: 5px;
+              &:nth-child(1){
+                display: block;
+                width: calc(100% - 200px);
+           }
+          }
+          .fa{
+            padding: 0 5px;
+            color: $light-color;
+        }
+      } 
+      
+    }
+    .search-login{
+        display: flex;
+        text-align: center;
+        .header-search{
+            background-color: $light-color;
+            border-bottom: 1px solid $light-grey;
+            width: 60%;
+            display: flex;
+            input{
+                background-color: transparent;
+                outline: none;
+                border: none;
+                border-left: 2px solid $light-sky;
+                color: $light-sky;
+                width: 80%;
+                margin: 5px 13px;
+            }
+            .fa{
+                padding: 5px;
+                margin-top: 5px;
+                color: $light-sky;
+            }
+            a{
+                width: 20%;
+            }
+        }
+        .header-login{
+            background-color: $light-sky;
+            width: 40%;
+            p{
+                margin: 0px 20px;
+                padding: 5px;
+            }
+            .fa{
+                color: $light-color;
+                padding: 5px;
+                margin-top: 5px;
+            }
+        }
+    }
+    .header-hamburger{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        img{
+            width: 150px;
+            padding: 10px;
+        }
+         .fa{
+            color: $dark-grey-color;
+            margin: 15px 30px;
+            display: block;
+        }
+    }
+    .facility{
+        padding: 12px 0;
+        display: none;
+    }
+    hr{
+        display: none;
+    }
+    .facility-nav{
+        ul{
+            @include display-with-content(flex,center);
+            padding: 0;
+            list-style: none; 
+            margin: 0;
+        }
+        a{
+            text-decoration: none;
+            color: $light-sky;
+            font-weight: bold;
+            margin: 0 25px; 
+        }
+       
+    }
+}
+@media only screen and (min-width:768px){
+    @media only screen and (max-width:992px){
+        .header{
+            .container,input{
+                font-size: 10px;
+            }
+        }
+    }
+    .header{
+        .navigation{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .navigation_left{
+              ul{
+                display: flex;
+                padding: 5px;
+                li{
+                    padding: 5px; 
+                    display: block;
+                }
+              }
+            .fa{
+                padding: 0;
+                display: none;
+            }
+        }
+        .navigation_right{
+            display: flex;
+            flex-direction: row;
+          ul{
+              padding: 5px 25px 5px 5px;
+              li{
+                padding: 5px;
+                  &:nth-child(1){
+                   display: none;
+               }
+              }
+          } 
+          
+        }
+        .search-login{
+            input{
+                margin: 10px;
+            }
+            .header-login{
+                background-color: $light-sky;
+                p{
+                    padding: 0 5px;
+                }
+            }
+        }
+        .header-hamburger{
+            .fa{
+                display: none;
+            }
+        }
+        .facility,hr{
+            display: block;
+        }
+    }
+    
+}
